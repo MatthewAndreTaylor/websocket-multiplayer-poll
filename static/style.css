@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#colors {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.color {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.color:hover {
+    background-color: #ddd;
+}
+
+#votes {
+    margin-top: 20px;
+}
+
+#votesCount {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+#votesCount div {
+    margin: 5px;
+}

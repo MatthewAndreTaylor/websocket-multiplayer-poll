@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting App Demo</title>
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+</head>
+<body>
+    <h1>Voting App</h1>
+
+    <div id="colors">
+        <button style="color: red" class="color" onclick="vote('red')">Red</button>
+        <button style="color: blue" class="color" onclick="vote('blue')">Blue</button>
+        <button style="color: purple" class="color" onclick="vote('purple')">Purple</button>
+        <button style="color: green" class="color" onclick="vote('green')">Green</button>
+    </div>
+
+    <div id="votes">
+        <h2>Votes:</h2>
+        <div id="votesCount"></div>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>
