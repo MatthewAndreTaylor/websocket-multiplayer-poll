@@ -1,5 +1,4 @@
 const socket = new WebSocket(`ws://${location.host}/color_vote`);
-
 socket.onmessage = (event) => {
     const data = JSON.parse(event.data);
 
@@ -11,7 +10,6 @@ socket.onmessage = (event) => {
 function vote(color) {
     socket.send(JSON.stringify({ color }));
 }
-
 function updateVotes(votes) {
     const votesCountElement = document.getElementById('votesCount');
     votesCountElement.innerHTML = '';
